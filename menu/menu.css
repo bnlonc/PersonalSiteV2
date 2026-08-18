@@ -1,0 +1,33 @@
+html, body {
+	height: 100%;
+}
+
+#mainContainer {
+	--main-container-padding: 0;
+	height: calc(100% - 100px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#mainContainer::before {
+	border-radius: 20px;
+}
+
+a {
+	margin: 20px 0;
+	text-decoration: none;
+	color: inherit;
+}
+.menuButton { 
+	/* margin: 50px 0; */
+	padding: 30px;
+	height: fit-content;
+	width: 400px;
+
+	--radius: 100px;
+}
+.menuButton > h4 {
+	margin: 0;
+}

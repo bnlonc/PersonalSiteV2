@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Generated from mainPageTemplate.shtml -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ben Lonc - Blog</title>
+        <link rel="stylesheet" href="/blog/style/listPage.css">
+        <link rel="stylesheet" href="/style/common.css">
+        <link rel="stylesheet" href="/style/palettes.css">
+        <link rel="stylesheet" href="/style/borders.css">
+        <link rel="stylesheet" href="/style/elements.css">
+    </head>
+    <body>
+        <div id="mainContainer" class="blue border">
+            <div id="navigationButtons" class="green bar">
+                <a class="verticalOnly" href="/menu" id="menu"><h4>Menu</h4></a>
+                <a class="horizontalOnly" href="/"><h4>Home</u></h4></a>
+                <a class="horizontalOnly" href="/about"><h4>About</h4></a>
+                <a class="horizontalOnly" href="/blog/tags/all"><h4><u>Blog</u></h4></a>
+                <a class="horizontalOnly" href="/resume"><h4>Resume</h4></a>
+            </div>
+            <h1 class="verticalOnly" id="pageTitle">Blog</h1>
+            <div id="entryList">
+                <div id="tagContainer" class="orange border entryOuterContainer">
+                    <h5 id="browseByTag"><i>Browse by tag:</i></h5>
+                    <div id="tagButtons">
+                        <!--tag_button_placeholder-->
+                    </div>
+                </div>
+                <!--body_content_placeholder-->
+            </div>
+        </div>
+    </body>
+</html>

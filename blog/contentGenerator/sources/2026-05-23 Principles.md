@@ -1,0 +1,60 @@
+---
+title: "Principles for Personal Computing"
+description: "How I live my digital life according to my principles, and how you can do the same"
+date: "2026-05-23"
+tags: ["Tech"]
+---
+Every year, digital citizenship gets closer and closer to encompassing citizenship as a whole. Your constellation of online identities and digital resources have become the means by which you access society, particularly if you’re younger and live in an area with well-established Internet infrastructure. That is to say, if you’re reading this, you almost certainly access banking, taxes, government paperwork, correspondence with family and friends, entertainment, education, and the public square writ large by logging into accounts on online services. Your (recent) family photos and important documents were almost certainly digital from their inception or have been digitized, and at least one copy (if not the only copy) is probably stored in a commercial cloud service like Google Drive.
+
+In societies with widespread digital infrastructure, being a citizen means being a digital citizen. As your digital life increasingly just becomes your life, full stop, I think it’s important to live that digital life conscientiously. More specifically, I think it’s important to have a set of principles that guide how you live your digital life. This post isn’t going to admonish you for how you have your accounts set up or how you back up your data or anything like that. If something works for you, far be it from me to tell you that you have to dump it because it’s not something I’d want to use. Instead, I want to encourage you to think about what your principles are and to live your digital life in accordance with those principles.
+
+#### My principles
+
+So, what do I mean by principles? I’ll list mine out to give you an example, from most to least important.
+
+1. Ownership: If I depend on it, I want to own it. I should have full control over my data and the hardware that it lives on. I don’t want to depend on an outside provider who could close my account, lose my data, expose my data to third parties, or retain data that I want to delete.
+2. Privacy: My data should be my business and my business alone. I don’t want my data or metadata (usage patterns, timestamps, filenames, etc.) to be tracked or used for advertising, AI training, or any other surveillance purposes.
+3. Security: My data and accounts should conform to all three corners of the CIA triad. It should be accessible only to me and people with whom I explicitly share it (**C**onfidentiality), it should not be deleted or modified by anyone other than myself and people to whom I grant permission (**I**ntegrity), and reliably accessible whenever I need it (**A**vailability).
+4. Openness: I want to depend on open-source hardware and software whenever it’s possible without compromising on functionality. The hardware and software I rely on should be auditable by security experts and should accept feature and quality-of-life updates from the community. I’ll do whatever I can to avoid giving money to companies that make their products hard to modify or repair.
+5. Portability: I want to be able to migrate my data and accounts from device to device with low setup overhead. My life shouldn’t grind to a halt because I lost my phone or bricked my computer.
+6. Simplicity: I want to follow a relatively paved path with my setup. I’ll choose hardware and software with solid documentation and sane defaults so that I don’t have to do all the heavy lifting myself.
+
+Obviously, none of these are things you’d expect anyone to disagree with outright. The difference-makers will be what you include or omit and, more importantly, the order you choose. I think it’s a good exercise to think of a handful of principles and put them in order based on how much they matter to you personally. This will help you reflect on what I discuss below.
+
+## My setup
+
+How do I operationalize these principles? I’ll give a few examples of ways I have my digital life set up and explain why I made the choices I did.
+
+#### Hardware
+
+I daily-drive a Google Pixel phone running GrapheneOS. GrapheneOS is an open-source, Android-based operating system that prioritizes privacy and security. Aside from the privacy and security principles mentioned above, this gives me stronger ownership over my phone, since I’m not nearly as dependent on Google services as I would be on the stock OS and I can use the Play Store anonymously via the Aurora Store. While Pixel phones aren’t open-source, they’re the only phones that are currently supported by GrapheneOS. I don’t think current open-source mobile hardware offers an OS that is at parity with GrapheneOS’s features, privacy, and security.
+
+My main computer is a desktop PC running Pop!\_OS, an open-source GNU+Linux operating system based on Ubuntu. This gives me all the ownership, privacy, and security that comes with an open-source OS: it doesn’t monitor me, show me ads, or try to force AI down my throat. In addition, I get a simple and familiar Ubuntu environment for installing whatever software I want, with the added benefit of good out-of-the-box gaming performance. The developers package in the open-source Nvidia driver for it, so I get the additional benefit of a simple setup.
+
+I have a mini-PC that I use as a server running Ubuntu for simplicity’s sake. Access to this machine via SSH is secured with a pair of FIDO2 device-bound passkeys living on two Yubikeys: one daily driver and one spare. This gives me secure, phishing-resistant remote access to my server from anywhere. This server hosts a few things, most notably my personal site (this page!) and my Nextcloud instance. More about those in a bit.
+
+#### My cloud
+
+Instead of using Google Drive or iCloud, I host my own personal cloud on my server. This gives me full ownership over my data without compromising on the convenience of the cloud. In addition to being a place to store files, I get some other handy apps like a calendar and notes app that sync across all my devices just like Google Calendar and Google Docs, though the features are much more sparse.
+
+I also host my personal website on my server. I built it by hand and serve it over nginx, with certbot handling Let’s Encrypt certificate renewals so I have that nice padlock icon you see in the address bar above.
+
+My website and personal cloud run as containerized apps orchestrated by Docker Compose. This means I have a `docker-compose.yml` file that I can execute to launch both of these at once in their own virtual sandboxes with a preset configuration, giving me the security, simplicity, and portability of containerized apps.
+
+While I’d love to be able to say I have some cool self-hosted solution for my email, the truth is that I still daily-drive Gmail. Self-hosting your email is possible, but I don’t have the time or energy to dive into that can of worms at the moment, especially given that the blast radius of a borked email is way higher than my personal blog going down.
+
+#### Backups
+
+I use Vorta, which is a frontend for Borg Backup, to back up my PC and server. This choice was motivated by my use of Nextcloud, which natively integrates with Borg. This gives me an easy one-stop shop for backing up both my PC and my cloud data. I follow the 3-2-1 backup scheme: three copies, on two different types of storage media, with one copy stored offsite. One copy lives on my PC in a flash storage drive, another lives on an old-fashioned spinning-disk hard drive that I keep disconnected in a drawer, and the third is also an old-fashioned HDD that I keep at a bank. This way, if my PC dies, my apartment floods, or the bank burns down, I’ll still have a copy of my data as long as all three didn’t happen simultaneously. The copy on my PC automatically updates once every three days, and I refresh my cold backups about once a month.
+
+#### Passwords
+
+I keep my passwords in a local password manager, with a copy on my flash drive and with all my backups. Whenever possible, I use my FIDO keys mentioned above as my second authentication factor to avoid a hard dependency on my phone or cell service provider. This makes my second factor resistant to phishing and social engineering. 
+
+## So what?
+
+Personal computing has changed a lot since it came to the fore in the early 80s, and it’s going to continue to change. Right now, it’s heading in a centralized, subscription-based direction. I think this is alarming because it represents a further step away from the autonomy and independence of the early home computer, when it was expected that you’d not only own your data and your device but write your own software from scratch. Operating systems and the Web are increasingly locked down, controlled by their developers rather than their users, and squeezed for all the revenue they can generate. In my hypothetical ideal world, every line of code that executes on my PC does so strictly for my benefit and mine alone.
+
+My aversion to data collection doesn't stem from paranoia about the government or aliens or whatever. I see surveillance in all its forms as a violation of my fundamental human right to privacy, and yours too. When it comes to rights, you either use them, or you lose them.
+
+I don’t think everyone absolutely needs to go out and set up a homelab and self-host their own cloud. If you value convenience and simplicity and don’t have time to mess around with all this, the standard cloud-based pattern is probably right for you. I’m putting this out there to encourage you to think critically about the technologies that you rely on. If you decide that the standard pattern isn’t satisfying your principles, setting up an alternative that does is easier than you think!

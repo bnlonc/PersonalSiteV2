@@ -1,0 +1,55 @@
+#mainContainer {
+    @media not screen and (min-width: 1280px) {
+        --main-container-padding: 0;
+        margin-top: calc(2 * var(--fancy-border-width));
+    }
+}
+
+#top, #bottom {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+    }
+}
+#top {
+    margin-bottom: 80px;
+}
+
+.text {
+    padding: 0 50px;
+}
+.image {
+    height: fit-content;
+    @media screen and (min-width: 1280px) {
+        margin: 0 calc(2 * var(--fancy-border-width));
+    }
+    @media not screen and (min-width: 1280px) {
+        margin: 75px calc(50px + var(--fancy-border-width));
+    }
+}
+
+#top > .text {
+    flex: 2;
+}
+#top > .image {
+    flex: 1;
+}
+
+#bottom > .text {
+    flex: 3;
+}
+#bottom > .image {
+    flex: 2;
+}
+
+#top > .text > h2 {
+    margin: 80px 0; 
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-radius: 30px;
+}

@@ -1,0 +1,51 @@
+:root {
+  @media screen and (min-width: 1280px) {
+    --fancy-border-width: 6px;
+  }
+  @media not screen and (min-width: 1280px) {
+    --fancy-border-width: 14px;
+  }
+  --fancy-border-default-radius: 15px;
+}
+
+.border {
+  position: relative;
+  isolation: isolate;
+}
+.border::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+
+  top: calc(-1 * var(--fancy-border-width) - 1px);
+  left: calc(-1 * var(--fancy-border-width) - 1px);
+
+  width: calc(100% + 2 * var(--fancy-border-width));
+  height: calc(100% + 2 * var(--fancy-border-width));
+
+  border: 1px solid var(--base);
+  background-color: var(--base);
+  background-image: 
+    radial-gradient(75% 1% at 50% 0%, var(--upper-highlight), transparent), 
+    radial-gradient(75% 1% at 50% 99%, var(--lower-highlight), transparent);
+  box-shadow: 
+    inset 0 -2px 4px 1px var(--lower-box-shadow), 
+    inset 0 -4px 4px 1px var(--lower-highlight), 
+    inset 0 0 2px 1px var(--inner-glow), 0 1px 4px 1px var(--outer-glow), 
+    0 1px 4px 1px var(--shadow);
+}
+.border::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  background-color: var(--background);
+}

@@ -1,0 +1,42 @@
+:root {
+    --outer-glow: rgba(231, 153, 17, 0.2);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --inner-glow: rgba(255, 255, 255, 0.2);
+    --background: #fff;
+}
+
+.orange {
+    --base: #df7c03;
+    --text: #fff;
+    --upper-highlight: #fffbf4;
+    --lower-highlight: #fcc88d;
+    --text-shadow: #a9770d;
+    --lower-box-shadow: rgba(231, 110, 17, 0.6);
+}
+
+.green {
+    --base: #10ab08;
+    --text: #fff;
+    --upper-highlight: #f7fff4;
+    --lower-highlight: #71bd61;
+    --text-shadow: #166505;
+    --lower-box-shadow: rgba(56, 238, 47, 0.6);
+}
+
+.blue {
+    --base: #0360df;
+    --text: #fff;
+    --upper-highlight: #f4feff;
+    --lower-highlight: #8de3fc;
+    --text-shadow: #116ee7;
+    --lower-box-shadow: rgba(17, 110, 231, 0.6);
+}
+
+.grey {
+    --base: #a7a7a7;
+    --text: #fff;
+    --upper-highlight: #fafafa;
+    --lower-highlight: #c4c4c4;
+    --text-shadow: #5c5c5c;
+    --lower-box-shadow: rgba(125, 125, 125, 0.6);
+}

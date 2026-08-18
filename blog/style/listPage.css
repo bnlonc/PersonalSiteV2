@@ -1,0 +1,114 @@
+:root {
+	--content-width: 97%;
+}
+
+body {
+	grid-template-columns: auto;
+}
+
+#pageTitle {
+	margin: 20px 0;
+	padding-left: calc((100% - var(--content-width)) / 2 + var(--fancy-border-width));
+}
+
+#browseByTag {
+	text-align: center;
+	margin: 20px 0;
+}
+
+#browseByTag > h5 {
+	width: fit-content;
+}
+
+#tagButtons {
+	@media screen and (min-width: 1280px) {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	@media not screen and (min-width: 1280px) {
+		display: grid;
+		box-sizing: border-box;
+		grid-template-columns: auto auto auto;
+		place-items: center;
+		gap: 40px;
+		padding: 30px 30px;
+	}
+}
+
+#tagButtons > * {
+	@media screen and (min-width: 1280px) {
+		margin: 10px 0;
+	}
+	@media not screen and (min-width: 1280px) {
+		margin: 0;
+	}
+}
+
+#tagButtons > a {
+	border-radius: 100px;
+	text-decoration: none;
+	@media screen and (min-width: 1280px) {
+		min-width: 60px;
+	}
+	@media not screen and (min-width: 1280px) {
+		width: fit-content;
+		min-width: 200px;
+	}
+}
+
+#tagButtons > a > h5 {
+	margin: 0;
+}
+
+#entryList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 60px;
+	@media not screen and (min-width: 1280px) {
+		position: relative;
+		margin-top: 70px;
+	}
+}
+
+.entryInnerContainer::before, #tagContainer::before {
+	border-radius: var(--fancy-border-default-radius);
+}
+
+.entryInnerContainer {
+	display: grid;
+	grid-template-columns: auto auto;
+	
+	padding: 10px;
+}
+.entryInnerContainer > * {
+	margin: 10px 0;
+}
+
+.date {
+	display: inline;
+	justify-self: right;
+	width: fit-content;
+	height: fit-content;
+	padding: 0 10px;
+	
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.entryOuterContainer {
+	@media screen and (min-width: 1280px) {
+		width: 1000px;
+	}
+	@media not screen and (min-width: 1280px) {
+		width: calc(var(--content-width) - 2 * var(--fancy-border-width));
+	}
+	text-decoration: none;
+	color: inherit;
+}
+
+.backgroundImage::after {
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6)), var(--background-image-url);
+	background-size: 100%;
+	background-position-y: var(--background-offset);
+}

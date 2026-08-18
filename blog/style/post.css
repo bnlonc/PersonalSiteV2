@@ -1,0 +1,102 @@
+#mainTitle {
+	margin-bottom: 10px;
+	@media not screen and (min-width: 1280px) {
+		margin-top: 0;
+		margin-left: 20px;
+		width: 600px;
+	}
+}
+
+#browseByTag {
+	display: flex;
+	align-items: center;
+}
+
+#tagButtons > * {
+	margin: 10px 0;
+}
+
+#tagButtons {
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	gap: 30px;
+	@media not screen and (min-width: 1280px) {
+		padding-left: 20px;
+	}
+}
+
+#tagButtons > a {
+	border-radius: 100px;
+	text-decoration: none;
+	min-width: 60px;
+}
+
+#tagButtons > a > h5 {
+	margin: 0;
+}
+
+#postText {
+	@media not screen and (min-width: 1280px) {
+		padding: 0 20px;
+	}
+}
+
+img, video {
+	@media screen and (min-width: 1280px) {
+		width: 60%;
+		margin-left: 20%;
+	}
+	@media not screen and (min-width: 1280px) {
+		width: 100%;
+	}
+}
+
+img:not(#noRadius), video:not(#noRadius), .youtubeEmbed {
+	border-radius: 10px;
+}
+
+.youtubeEmbed {
+	aspect-ratio: 16/9;
+	@media screen and (min-width: 1280px) {
+		padding: 0;
+		width: 60%;
+		margin-left: 20%;
+	}
+	@media not screen and (min-width: 1280px) {
+		width: 100%;
+	}
+}
+
+blockquote > p {
+    text-align: center;
+}
+
+#linkToTop {
+	text-decoration: none;
+}
+
+#linkToTop > div {
+	margin: 40px 0 0 0;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	@media not screen and (min-width: 1280px) {
+		width: 100px;
+		height: 100px;
+		margin-left: 20px;
+	}
+}
+
+#linkToTop > div > * {
+	margin: 0;
+	width: fit-content;
+	display: inline;
+	width: 100%;
+}
+
+code {
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
