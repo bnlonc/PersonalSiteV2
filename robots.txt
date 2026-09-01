@@ -1,0 +1,19 @@
+User-agent: Googlebot
+User-agent: DuckAssistBot
+User-agent: LinkedInBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Applebot
+User-agent: FacebookBot
+User-agent: AI2Bot
+User-agent: Timpibot
+Allow: /$
+Allow: /about
+Allow: /blog/tags/all
+Disallow: /
+
+User-agent: *
+Disallow: /
