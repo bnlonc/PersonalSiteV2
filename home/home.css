@@ -76,9 +76,37 @@ h3::after {
     margin: 8% 0;
   }
 }
-img {
+#headshot img {
   display: block;
   width: 100%;
   margin: 0;
   border-radius: 30px;
+}
+
+#links {
+  margin-top: 80px;
+  display: flex;
+  @media screen and (min-width: 1280px) {
+    place-items: left;
+    gap: 60px;
+  }
+  @media not screen and (min-width: 1280px) {
+    gap: 80px;
+  }
+}
+
+#links > a {
+  text-decoration: none;
+  @media screen and (min-width: 1280px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media not screen and (min-width: 1280px) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+#links img {
+  width: 60%;
 }
