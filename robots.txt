@@ -1,19 +1,42 @@
+# Search engines
 User-agent: Googlebot
-User-agent: DuckAssistBot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: Yandexbot
+User-agent: Baiduspider
+User-agent: DuckDuckBot
+User-agent: Timpibot
+Allow: /
+
+# Social media 
 User-agent: LinkedInBot
-User-agent: OAI-SearchBot
+User-agent: FacebookExternalHit
+Allow: /
+
+# AI search 
 User-agent: ChatGPT-User
-User-agent: ClaudeBot
+User-agent: OAI-SearchBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Google 
 User-agent: PerplexityBot
 User-agent: Perplexity-User
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
 User-agent: Applebot
-User-agent: FacebookBot
-User-agent: AI2Bot
-User-agent: Timpibot
-Allow: /$
-Allow: /about
-Allow: /blog/tags/all
+Allow: /
+
+# Internet Archive
+User-agent: ia_archiver
+Allow: /
+
+# Don't steal my writing to train your LLMs. I worked hard on it.
+User-agent: Applebot-Extended
+User-agent: Google-Extended
+User-agent: cohere-ai
+User-agent: Meta-ExternalAgent
 Disallow: /
 
+# That's my site! I don't know you!
 User-agent: *
 Disallow: /
