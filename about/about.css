@@ -5,14 +5,14 @@
     }
 }
 
-#top, #bottom {
+.sectionContainer > * {
     @media screen and (min-width: 1280px) {
         display: flex;
         height: fit-content;
         align-items: center;
     }
 }
-#top {
+.top {
     margin-bottom: 80px;
 }
 
@@ -29,22 +29,34 @@
     }
 }
 
-#top > .text {
+#aboutMe > .top > .text {
     flex: 2;
 }
-#top > .image {
+#aboutMe > .top > .image {
     flex: 1;
 }
 
-#bottom > .text {
+#aboutMe > .bottom > .text {
     flex: 3;
 }
-#bottom > .image {
+#aboutMe > .bottom > .image {
     flex: 2;
 }
 
-#top > .text > h2 {
-    margin: 80px 0; 
+#aboutSite > .top > .text {
+        flex: 2;
+}
+#aboutSite > .top > .image {
+    flex: 1;
+}
+
+h2 {
+    margin: 60px 0; 
+}
+
+hr {
+    margin: 80px 0;
+    color: var(--base);
 }
 
 img {

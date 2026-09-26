@@ -1,2 +1,3 @@
 blog/contentGenerator/scripts/.venv
 ignore_*
+blog/contentGenerator/scripts/__pycache__

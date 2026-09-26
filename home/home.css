@@ -109,4 +109,5 @@ h3::after {
 
 #links img {
   width: 60%;
+  filter: drop-shadow(1.5px 1.5px 0.1px rgba(0, 0, 0, 0.5));
 }
