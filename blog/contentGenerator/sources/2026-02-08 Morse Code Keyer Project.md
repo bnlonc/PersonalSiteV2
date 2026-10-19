@@ -41,7 +41,7 @@ As for the microcontroller choice, it really came down to what I had to hand. Th
 As for the housing, I went back to Old Reliable, my bottom desk drawer. I found a couple of Altoids tins that I'd neglected to throw out years ago. Perfect. 
 
 ### Physical construction 
-Before I could start messing around with code, I'd have to make sure everything would actually fit in the tin. I broke out my old Dremel (you can guess where I found that) and got to work drilling holes for everything. My first attempt at cutting hte holes was kind of a disaster, helped in no small part by a change of plans I made early on that meant that the hole for the volume potentiometer had to move. 
+Before I could start messing around with code, I'd have to make sure everything would actually fit in the tin. I broke out my old Dremel (you can guess where I found that) and got to work drilling holes for everything. My first attempt at cutting the holes was kind of a disaster, helped in no small part by a change of plans I made early on that meant that the hole for the volume potentiometer had to move. 
 
 ![Tin 1 side view](../../assets/2026-02-08/tin1_side.png)
 

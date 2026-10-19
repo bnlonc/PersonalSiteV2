@@ -28,7 +28,7 @@ When it finally arrived, I had a bit of a heart attack when I noticed that the b
 
 <img src="../../assets/2026-08-08/battery_door.jpg" alt="The battery door in question">
 
-Whatever. Once I had it in hand, I did some tests and found that the listing was otherwise correct. The FM and AM radio did work, at least when the battery could make decent contact. You'll note that this Walkman takes a pretty funny-looking battery. These batteries are super slim, rectangular rechargeables that were used in Sony devices like cassette and minidisk Walkmans back in the day. Original "gumsticks" used a nickel-cadmium chemistry (gross, toxic) and have been out of production for a long time, but generic nickel-metal hydride ones are still readily available today. The new ones work just as well as the old ones do, don't contain any nasty cadmium, and can be charged on any regular charger that supports NiMH chemistry.
+Whatever. Once I had it in hand, I did some tests and found that the listing was otherwise correct. The FM and AM radio did work, at least when the battery could make decent contact. You'll note that this Walkman takes a pretty funny-looking battery. These batteries are super slim, rectangular rechargeables that were used in Sony devices like cassette and MiniDisc Walkmans back in the day. Original "gumsticks" used a nickel-cadmium chemistry (gross, toxic) and have been out of production for a long time, but generic nickel-metal hydride ones are still readily available today. The new ones work just as well as the old ones do, don't contain any nasty cadmium, and can be charged on any regular charger that supports NiMH chemistry.
 
 <img src="../../assets/2026-08-08/battery.jpg" alt="A 'gumstick' battery">
 
@@ -83,7 +83,7 @@ Funnily enough, Marshall over at Wristwatch Revival (the guy who inspired me to 
 
 ### The plan
 
-Anyways, I'm going to fully strip this thing down, clean everything thoroughly, and lubricate it (less horribly) before putting it all back together. Then, I'll replace the old belt and pinch rollers with new ones. The old pinch rollers weren't in particulary bad shape, but I was able to get new ones for just $6 from the same vendor as the replacement belt with no additional shipping charge, so I threw them in. 
+Anyways, I'm going to fully strip this thing down, clean everything thoroughly, and lubricate it (less horribly) before putting it all back together. Then, I'll replace the old belt and pinch rollers with new ones. The old pinch rollers weren't in particularly bad shape, but I was able to get new ones for just $6 from the same vendor as the replacement belt with no additional shipping charge, so I threw them in. 
 
 As an aside, one of the lessons I took from the last repair was to slow down and be meticulous with all the parts, especially the screws. Since I don't have a magnetic parts tray, I did the next best thing. I used some packing tape that doesn't leave much residue to stick all the small parts to a piece of cardboard. I labelled each one and took plenty of photos so that I'd know how the gears all fit together. 
 
